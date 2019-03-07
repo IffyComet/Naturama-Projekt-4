@@ -1,0 +1,286 @@
+/*CSS til Naturama Dinosaur særudstilling projekt hjemmeside*/
+/*nulstilling af side*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*baggrunde og padding på sectioner*/
+body {
+    background-color: #fcd031;
+    font-family: "open sans", sans-serif;
+}
+header {
+    padding: 20px;
+}
+nav {
+    padding: 20px;
+    
+}
+#egg {
+    background-color: #e87722;
+    padding: 20px;
+}
+#video {
+    background-color: #3f3d44;
+    padding: 20px;
+}
+#map {
+    background-color: #c48c28;
+    padding: 20px;
+}
+footer {
+    background-color: #28262e;
+    padding: 20px;
+}
+/*indre elementer i den rækkefølge de kommer i HTML dokumentet*/
+.vigtigt {
+    position: -webkit- sticky; /*webkit er ifølge w3schools til safari*/
+    position: sticky;
+    background-color: red;
+    top: 0;
+    font-size: 20px;
+    padding: 20px;
+    color: yellow;
+}
+.logo {
+    width: 340px;
+    height: auto;
+    float: left;
+    border-radius: 50% 50%;
+    border: 5px solid #000000;    
+}
+h1 {
+    color: white;
+    text-shadow: 2px 0px black;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+h2 {
+    display: block;
+    color: white;
+    text-shadow: 3px 0px black;
+    font-size: 90px;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-bottom: -3px;
+}
+.knapper {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+#knap1 {
+    background-color: #e87722;
+}
+#knap1:hover {
+    background-color: #28262e;
+}
+a {
+    color: white;
+    text-shadow: 2px 0px black;
+    font-size: 20px;
+    text-decoration: none;
+}
+#knap2 {
+    background-color: #3f3d44;
+}
+#knap2:hover {
+    background-color: #28262e;
+}
+#knap3 {
+    background-color: #c48c28;
+}
+#knap3:hover {
+    background-color: #28262e;
+}
+#klik {
+    width: 100px;
+    display: block;
+    padding-left: 30%;
+    margin: 10px;
+}
+#egg1 {
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h4 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    font-size: 16px;
+}
+#faktabox1 {
+    background-color: #3f3d44;
+    padding: 1px;
+    animation-name: move-faktabox1;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+@keyframes move-faktabox1 {
+    0%{
+        transform: translateX(0px) translateY(-700px);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
+}
+p {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+h3 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+#videoen {
+    width: 460px;
+    height: 420px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#faktabox2 {
+    background-color: #c48c28;
+    padding: 1px;
+    animation-name: move-faktabox2;
+    animation-duration: 60s;
+    animation-delay: 60s;
+    animation-iteration-count: 1;
+}
+@keyframes move-faktabox2 {
+    0%{
+        transform: translateX(0px) translateY(-600px);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
+}
+/* nedenstående embed koden til kortet er kopieret fra https://www.embedgooglemap.net */
+.mapouter {
+    text-align: right;
+    height: 400px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    font-size: 10px;
+    max-width: 700px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none! important;
+    height: 400px;
+    width: 100%;
+    max-width: 700px;
+}
+#gmap_canvas {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+}
+#korttekst {
+    font-size: 10px;
+}
+/* ovenstående embed koden til kortet er kopieret fra https://www.embedgooglemap.net */
+#faktabox3 {
+    background-color: #28262e;
+    padding: 1px;
+    animation-name: move-faktabox3;
+    animation-duration: 60s;
+    animation-delay: 120s;
+    animation-iteration-count: 1;
+}
+@keyframes move-faktabox3 {
+    0%{
+        transform: translateX(0px) translateY(-600px);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
+}
+#knap {
+    background-color: #fcd031;
+}
+#knap:hover {
+    background-color: #e87722;
+}
+/* mindre skærm */
+@media (max-width: 479px){
+    .vigtigt {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .logo {
+        max-width: 50%;   
+    }
+    h1 {
+        font-size: 30px;
+        margin-bottom: -20px;
+    }
+    h2 {
+        font-size: 370%;
+        margin-top: 5%;
+    }
+    .knapper {
+        margin: 5px;
+    }
+    #klik {
+        padding-left: 10%;
+    }
+    #egg1 {
+        height: 300px;
+    }
+    @keyframes move-faktabox1 {
+        0%{
+            transform: translateX(0px) translateY(-550px)
+        }
+    }
+    #videoen {
+        width: 80%;
+        height: auto;
+    }
+    @keyframes move-faktabox2 {
+        0%{
+            transform: translateX(0px) translateY(-400px);
+        }
+    }
+    .mapouter {
+        width: 80%;
+        height: auto;
+    }
+    .gmap_canvas {
+        width: 100%;
+        height: auto;
+    }
+    #gmap_canvas {
+        width: 100%;
+        height: auto;
+        /* frameborder="1"; 
+        scrolling="no"; 
+        marginheight="0"; 
+        marginwidth="0"; 
+        selve koden ville gerne have disse værdier med, men de virker ikke til at have nogen funktion */
+    }
+    @keyframes move-faktabox3 {
+       0%{
+            transform: translateX(0px) translateY(-400px);
+       } 
+    }
+    }
+/*større skærm */
+@media (min-width: 960px){
+    nav {
+        float: right;
+        margin-top: -380px
+    }
+}
